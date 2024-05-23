@@ -582,7 +582,7 @@ $("body").on("keydown", function(e) {
                 timer: 2500,
             });
         }
-        else if(e.key === "q") {
+        else if(e.key === "q" || e.key === "Q") {
             let copyTextA5 = document.getElementById("valA5");
             navigator.clipboard.writeText(copyTextA5.value);
             swal({
@@ -592,7 +592,7 @@ $("body").on("keydown", function(e) {
                 timer: 2500,
             });
         }
-        else if(e.key === "w") {
+        else if(e.key === "w" || e.key === "W") {
             let copyTextA6 = document.getElementById("valA6");
             navigator.clipboard.writeText(copyTextA6.value);
             swal({
@@ -602,7 +602,7 @@ $("body").on("keydown", function(e) {
                 timer: 2500,
             });
         }
-        else if(e.key === "e") {
+        else if(e.key === "e" || e.key === "E") {
             let copyTextA7 = document.getElementById("valA7");
             navigator.clipboard.writeText(copyTextA7.value);
             swal({
@@ -612,7 +612,7 @@ $("body").on("keydown", function(e) {
                 timer: 2500,
             });
         }
-        else if(e.key === "r") {
+        else if(e.key === "r" || e.key === "R") {
             let copyTextA8 = document.getElementById("valA8");
             navigator.clipboard.writeText(copyTextA8.value);
             swal({
@@ -622,7 +622,7 @@ $("body").on("keydown", function(e) {
                 timer: 2500,
             });
         }
-        else if(e.key === "a") {
+        else if(e.key === "a" || e.key === "A") {
             let copyTextA9 = document.getElementById("valA9");
             navigator.clipboard.writeText(copyTextA9.value);
             swal({
@@ -632,7 +632,7 @@ $("body").on("keydown", function(e) {
                 timer: 2500,
             });
         }
-        else if(e.key === "s") {
+        else if(e.key === "s" || e.key === "S") {
             let copyTextA10 = document.getElementById("valA10");
             navigator.clipboard.writeText(copyTextA10.value);
             swal({
@@ -642,7 +642,7 @@ $("body").on("keydown", function(e) {
                 timer: 2500,
             });
         }
-        else if(e.key === "d") {
+        else if(e.key === "d" || e.key === "D") {
             let copyTextA11 = document.getElementById("valA11");
             navigator.clipboard.writeText(copyTextA11.value);
             swal({
@@ -652,7 +652,7 @@ $("body").on("keydown", function(e) {
                 timer: 2500,
             });
         }
-        else if(e.key === "f") {
+        else if(e.key === "f" || e.key === "F") {
             let copyTextA12 = document.getElementById("valA12");
             navigator.clipboard.writeText(copyTextA12.value);
             swal({
@@ -662,7 +662,7 @@ $("body").on("keydown", function(e) {
                 timer: 2500,
             });
         }
-        else if(e.key === "z") {
+        else if(e.key === "z" || e.key === "Z") {
             let copyTextA13 = document.getElementById("valA13");
             navigator.clipboard.writeText(copyTextA13.value);
             swal({
@@ -672,7 +672,7 @@ $("body").on("keydown", function(e) {
                 timer: 2500,
             });
         }
-        else if(e.key === "x") {
+        else if(e.key === "x" || e.key === "X") {
             let copyTextA14 = document.getElementById("valA14");
             navigator.clipboard.writeText(copyTextA14.value);
             swal({
@@ -682,7 +682,7 @@ $("body").on("keydown", function(e) {
                 timer: 2500,
             });
         }
-        else if(e.key === "c") {
+        else if(e.key === "c" || e.key === "C") {
             let copyTextA15 = document.getElementById("valA15");
             navigator.clipboard.writeText(copyTextA15.value);
             swal({
@@ -692,7 +692,7 @@ $("body").on("keydown", function(e) {
                 timer: 2500,
             });
         }
-        else if(e.key === "v") {
+        else if(e.key === "v" || e.key === "V") {
             let copyTextA16 = document.getElementById("valA16");
             navigator.clipboard.writeText(copyTextA16.value);
             swal({
