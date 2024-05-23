@@ -1,0 +1,1 @@
+.wrap{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;background:#ddd;margin:10px;padding:10px;border-radius:15px}.wrap li{list-style:none}.wrap .odd{display:none}.wrap button{background:#aaa;border-radius:15px;width:100px;height:100px}.wrap button:active{background:#ddd}/*# sourceMappingURL=style.min.css.map */

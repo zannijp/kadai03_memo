@@ -1,0 +1,26 @@
+.wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: #DDD;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    li {
+        list-style: none;
+    }
+}
+
+.wrap {
+    .odd {display: none;}    
+    button {
+        // display: grid;
+        // grid-template-columns: 1fr 1fr 1fr 1fr;
+        background: #AAA;
+        border-radius: 15px;
+        width: 100px;
+        height: 100px;
+        &:active {
+            background: #DDD;
+        }
+    }
+}
