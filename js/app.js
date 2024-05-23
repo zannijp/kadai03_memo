@@ -8,21 +8,18 @@
 //     }
 // });
 
-// $("#edit").on("click", function () {
-//     listHide = $("#wrapA > li:first").attr('class');
-//     console.log(listHide);
-//     if (listHide === "pad") {
-//         console.log("奇数");
-//     } else {
-//         console.log("偶数");
-//     }
-// });
-
 // // Padの数 1～16
 // let array = [];
 // for (let num = 1; num <= 6; num++) {
 //     array.push(num);
 // }
+
+function edit() {
+    $("#wrapAPad").removeClass("d_none");
+    $("#wrapAPad").addClass("wrap");
+    $("#edit").addClass("d_none");
+    $("#save").removeClass("d_none");
+}
 
 // 保存
 function save() {
@@ -186,50 +183,16 @@ function save() {
     $("#padA16").html(padA16html);
     $("#valA16").val(padA16val);
 
-    // const valA2 = $("#valA2").val();
-    // const valA3 = $("#valA3").val();
-    // const valA4 = $("#valA4").val();
-    // const valA5 = $("#valA5").val();
-    // const valA6 = $("#valA6").val();
-    // const valA7 = $("#valA7").val();
-    // const valA8 = $("#valA8").val();
-    // const valA9 = $("#valA9").val();
-    // const valA10 = $("#valA10").val();
-    // const valA11 = $("#valA11").val();
-    // const valA12 = $("#valA12").val();
-    // const valA13 = $("#valA13").val();
-    // const valA14 = $("#valA14").val();
-    // const valA15 = $("#valA15").val();
-    // const valA16 = $("#valA16").val();
-    // const valB1 = $("#valB1").val();
-    // const valB2 = $("#valB2").val();
-    // const valB3 = $("#valB3").val();
-    // const valB4 = $("#valB4").val();
-    // const valB5 = $("#valB5").val();
-    // const valB6 = $("#valB6").val();
-    // const valB7 = $("#valB7").val();
-    // const valB8 = $("#valB8").val();
-    // const valB9 = $("#valB9").val();
-    // const valB10 = $("#valB10").val();
-    // const valB11 = $("#valB11").val();
-    // const valB12 = $("#valB12").val();
-    // const valB13 = $("#valB13").val();
-    // const valB14 = $("#valB14").val();
-    // const valB15 = $("#valB15").val();
-    // const valB16 = $("#valB16").val();
-// 配列
-// const data = { 
-//     padA1: valA1, padA2: valA2, padA3: valA3, padA4: valA4,
-//     padA5: valA5, padA6: valA6,  padA7: valA7, padA8: valA8,
-//     padA9: valA9, padA10: valA10, padA11: valA11, padA12: valA12,
-//     padA13: valA13, padA14: valA14, padA15: valA15, padA16: valA16,
-//     padB1: valB1, padB2: valB2, padB3: valB3, padB4: valB4,
-//     padB5: valB5, padB6: valB6,  padB7: valB7, padB8: valB8,
-//     padB9: valB9, padB10: valB10, padB11: valB11, padB12: valB12,
-//     padB13: valB13, padB14: valB14, padB15: valB15, padB16: valB16,
-// };
-// 配列 → JSON変換 → localstorageに保存
-// localStorage.setItem("data", JSON.stringify(data));
+    $("#wrapAPad").addClass("d_none");
+    $("#wrapAPad").removeClass("wrap");
+    $("#edit").removeClass("d_none");
+    $("#save").addClass("d_none");
+    swal({
+        title: "保存しました！",
+        text: "-----------",
+        icon: "success",
+        timer: 2500,
+    });
 }
 
 // 読込
@@ -439,98 +402,343 @@ function copyA1() {
     navigator.clipboard.writeText(copyTextA1.value);
 
     /* コピーされた内容をポップアップで表示 */
-    alert("コピーされたテキスト: " + copyTextA1.value);
+    swal({
+        title: "コピーしました！",
+        text: copyTextA1.value,
+        icon: "success",
+        timer: 2500,
+    });
 }
 
 function copyA2() {
     let copyTextA2 = document.getElementById("valA2");
     navigator.clipboard.writeText(copyTextA2.value);
-    alert("コピーされたテキスト: " + copyTextA2.value);
+    swal({
+        title: "コピーしました！",
+        text: copyTextA2.value,
+        icon: "success",
+        timer: 2500,
+    });
 }
 
 function copyA3() {
-    let copyTextA2 = document.getElementById("valA2");
-    navigator.clipboard.writeText(copyTextA2.value);
-    alert("コピーされたテキスト: " + copyTextA2.value);
+    let copyTextA3 = document.getElementById("valA3");
+    navigator.clipboard.writeText(copyTextA3.value);
+    swal({
+        title: "コピーしました！",
+        text: copyTextA3.value,
+        icon: "success",
+        timer: 2500,
+    });
 }
 
 function copyA4() {
-    let copyTextA2 = document.getElementById("valA2");
-    navigator.clipboard.writeText(copyTextA2.value);
-    alert("コピーされたテキスト: " + copyTextA2.value);
+    let copyTextA4 = document.getElementById("valA4");
+    navigator.clipboard.writeText(copyTextA4.value);
+    swal({
+        title: "コピーしました！",
+        text: copyTextA4.value,
+        icon: "success",
+        timer: 2500,
+    });
 }
 
 function copyA5() {
-    let copyTextA2 = document.getElementById("valA2");
-    navigator.clipboard.writeText(copyTextA2.value);
-    alert("コピーされたテキスト: " + copyTextA2.value);
+    let copyTextA5 = document.getElementById("valA5");
+    navigator.clipboard.writeText(copyTextA5.value);
+    swal({
+        title: "コピーしました！",
+        text: copyTextA5.value,
+        icon: "success",
+        timer: 2500,
+    });
 }
 
 function copyA6() {
-    let copyTextA2 = document.getElementById("valA2");
-    navigator.clipboard.writeText(copyTextA2.value);
-    alert("コピーされたテキスト: " + copyTextA2.value);
+    let copyTextA6 = document.getElementById("valA6");
+    navigator.clipboard.writeText(copyTextA6.value);
+    swal({
+        title: "コピーしました！",
+        text: copyTextA6.value,
+        icon: "success",
+        timer: 2500,
+    });
 }
 
 function copyA7() {
-    let copyTextA2 = document.getElementById("valA2");
-    navigator.clipboard.writeText(copyTextA2.value);
-    alert("コピーされたテキスト: " + copyTextA2.value);
+    let copyTextA7 = document.getElementById("valA7");
+    navigator.clipboard.writeText(copyTextA7.value);
+    swal({
+        title: "コピーしました！",
+        text: copyTextA7.value,
+        icon: "success",
+        timer: 2500,
+    });
 }
 
 function copyA8() {
-    let copyTextA2 = document.getElementById("valA2");
-    navigator.clipboard.writeText(copyTextA2.value);
-    alert("コピーされたテキスト: " + copyTextA2.value);
+    let copyTextA8 = document.getElementById("valA8");
+    navigator.clipboard.writeText(copyTextA8.value);
+    swal({
+        title: "コピーしました！",
+        text: copyTextA8.value,
+        icon: "success",
+        timer: 2500,
+    });
 }
 
 function copyA9() {
-    let copyTextA2 = document.getElementById("valA2");
-    navigator.clipboard.writeText(copyTextA2.value);
-    alert("コピーされたテキスト: " + copyTextA2.value);
+    let copyTextA9 = document.getElementById("valA9");
+    navigator.clipboard.writeText(copyTextA9.value);
+    swal({
+        title: "コピーしました！",
+        text: copyTextA9.value,
+        icon: "success",
+        timer: 2500,
+    });
 }
 
 function copyA10() {
-    let copyTextA2 = document.getElementById("valA2");
-    navigator.clipboard.writeText(copyTextA2.value);
-    alert("コピーされたテキスト: " + copyTextA2.value);
+    let copyTextA10 = document.getElementById("valA10");
+    navigator.clipboard.writeText(copyTextA10.value);
+    swal({
+        title: "コピーしました！",
+        text: copyTextA10.value,
+        icon: "success",
+        timer: 2500,
+    });
 }
 
 function copyA11() {
-    let copyTextA2 = document.getElementById("valA2");
-    navigator.clipboard.writeText(copyTextA2.value);
-    alert("コピーされたテキスト: " + copyTextA2.value);
+    let copyTextA11 = document.getElementById("valA11");
+    navigator.clipboard.writeText(copyTextA11.value);
+    swal({
+        title: "コピーしました！",
+        text: copyTextA11.value,
+        icon: "success",
+        timer: 2500,
+    });
 }
 
 function copyA12() {
-    let copyTextA2 = document.getElementById("valA2");
-    navigator.clipboard.writeText(copyTextA2.value);
-    alert("コピーされたテキスト: " + copyTextA2.value);
+    let copyTextA12 = document.getElementById("valA12");
+    navigator.clipboard.writeText(copyTextA12.value);
+    swal({
+        title: "コピーしました！",
+        text: copyTextA12.value,
+        icon: "success",
+        timer: 2500,
+    });
 }
 
 function copyA13() {
-    let copyTextA2 = document.getElementById("valA2");
-    navigator.clipboard.writeText(copyTextA2.value);
-    alert("コピーされたテキスト: " + copyTextA2.value);
+    let copyTextA13 = document.getElementById("valA13");
+    navigator.clipboard.writeText(copyTextA13.value);
+    swal({
+        title: "コピーしました！",
+        text: copyTextA13.value,
+        icon: "success",
+        timer: 2500,
+    });
 }
 
 function copyA14() {
-    let copyTextA2 = document.getElementById("valA2");
-    navigator.clipboard.writeText(copyTextA2.value);
-    alert("コピーされたテキスト: " + copyTextA2.value);
+    let copyTextA14 = document.getElementById("valA14");
+    navigator.clipboard.writeText(copyTextA14.value);
+    swal({
+        title: "コピーしました！",
+        text: copyTextA14.value,
+        icon: "success",
+        timer: 2500,
+    });
 }
 
 function copyA15() {
-    let copyTextA2 = document.getElementById("valA2");
-    navigator.clipboard.writeText(copyTextA2.value);
-    alert("コピーされたテキスト: " + copyTextA2.value);
+    let copyTextA15 = document.getElementById("valA15");
+    navigator.clipboard.writeText(copyTextA15.value);
+    swal({
+        title: "コピーしました！",
+        text: copyTextA15.value,
+        icon: "success",
+        timer: 2500,
+    });
 }
 
 function copyA16() {
-    let copyTextA2 = document.getElementById("valA2");
-    navigator.clipboard.writeText(copyTextA2.value);
-    alert("コピーされたテキスト: " + copyTextA2.value);
+    let copyTextA16 = document.getElementById("valA16");
+    navigator.clipboard.writeText(copyTextA16.value);
+    swal({
+        title: "コピーしました！",
+        text: copyTextA16.value,
+        icon: "success",
+        timer: 2500,
+    });
 }
+
+
+$("body").on("keydown", function(e) { 
+    let chenge = $("#edit").attr("class");
+    if (chenge !== "d_none") {
+        if(e.key === "1") {
+            let copyTextA1 = document.getElementById("valA1");
+            navigator.clipboard.writeText(copyTextA1.value);
+            swal({
+                title: "コピーしました！",
+                text: copyTextA1.value,
+                icon: "success",
+                timer: 2500,
+            });
+        } else if(e.key === "2") {
+            let copyTextA2 = document.getElementById("valA2");
+            navigator.clipboard.writeText(copyTextA2.value);
+            swal({
+                title: "コピーしました！",
+                text: copyTextA2.value,
+                icon: "success",
+                timer: 2500,
+            });
+        } else if(e.key === "3") {
+            let copyTextA3 = document.getElementById("valA3");
+            navigator.clipboard.writeText(copyTextA3.value);
+            swal({
+                title: "コピーしました！",
+                text: copyTextA3.value,
+                icon: "success",
+                timer: 2500,
+            });
+        } else if(e.key === "4") {
+            let copyTextA4 = document.getElementById("valA4");
+            navigator.clipboard.writeText(copyTextA4.value);
+            swal({
+                title: "コピーしました！",
+                text: copyTextA4.value,
+                icon: "success",
+                timer: 2500,
+            });
+        }
+        else if(e.key === "q") {
+            let copyTextA5 = document.getElementById("valA5");
+            navigator.clipboard.writeText(copyTextA5.value);
+            swal({
+                title: "コピーしました！",
+                text: copyTextA5.value,
+                icon: "success",
+                timer: 2500,
+            });
+        }
+        else if(e.key === "w") {
+            let copyTextA6 = document.getElementById("valA6");
+            navigator.clipboard.writeText(copyTextA6.value);
+            swal({
+                title: "コピーしました！",
+                text: copyTextA6.value,
+                icon: "success",
+                timer: 2500,
+            });
+        }
+        else if(e.key === "e") {
+            let copyTextA7 = document.getElementById("valA7");
+            navigator.clipboard.writeText(copyTextA7.value);
+            swal({
+                title: "コピーしました！",
+                text: copyTextA7.value,
+                icon: "success",
+                timer: 2500,
+            });
+        }
+        else if(e.key === "r") {
+            let copyTextA8 = document.getElementById("valA8");
+            navigator.clipboard.writeText(copyTextA8.value);
+            swal({
+                title: "コピーしました！",
+                text: copyTextA8.value,
+                icon: "success",
+                timer: 2500,
+            });
+        }
+        else if(e.key === "a") {
+            let copyTextA9 = document.getElementById("valA9");
+            navigator.clipboard.writeText(copyTextA9.value);
+            swal({
+                title: "コピーしました！",
+                text: copyTextA9.value,
+                icon: "success",
+                timer: 2500,
+            });
+        }
+        else if(e.key === "s") {
+            let copyTextA10 = document.getElementById("valA10");
+            navigator.clipboard.writeText(copyTextA10.value);
+            swal({
+                title: "コピーしました！",
+                text: copyTextA10.value,
+                icon: "success",
+                timer: 2500,
+            });
+        }
+        else if(e.key === "d") {
+            let copyTextA11 = document.getElementById("valA11");
+            navigator.clipboard.writeText(copyTextA11.value);
+            swal({
+                title: "コピーしました！",
+                text: copyTextA11.value,
+                icon: "success",
+                timer: 2500,
+            });
+        }
+        else if(e.key === "f") {
+            let copyTextA12 = document.getElementById("valA12");
+            navigator.clipboard.writeText(copyTextA12.value);
+            swal({
+                title: "コピーしました！",
+                text: copyTextA12.value,
+                icon: "success",
+                timer: 2500,
+            });
+        }
+        else if(e.key === "z") {
+            let copyTextA13 = document.getElementById("valA13");
+            navigator.clipboard.writeText(copyTextA13.value);
+            swal({
+                title: "コピーしました！",
+                text: copyTextA13.value,
+                icon: "success",
+                timer: 2500,
+            });
+        }
+        else if(e.key === "x") {
+            let copyTextA14 = document.getElementById("valA14");
+            navigator.clipboard.writeText(copyTextA14.value);
+            swal({
+                title: "コピーしました！",
+                text: copyTextA14.value,
+                icon: "success",
+                timer: 2500,
+            });
+        }
+        else if(e.key === "c") {
+            let copyTextA15 = document.getElementById("valA15");
+            navigator.clipboard.writeText(copyTextA15.value);
+            swal({
+                title: "コピーしました！",
+                text: copyTextA15.value,
+                icon: "success",
+                timer: 2500,
+            });
+        }
+        else if(e.key === "v") {
+            let copyTextA16 = document.getElementById("valA16");
+            navigator.clipboard.writeText(copyTextA16.value);
+            swal({
+                title: "コピーしました！",
+                text: copyTextA16.value,
+                icon: "success",
+                timer: 2500,
+            });
+        }
+    }
+})
+
 
 // // Padの数 1～16
 // let array = [];

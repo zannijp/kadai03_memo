@@ -1,3 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kiwi Maru", serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.d_block {display: block;}
+.d_none {display: none;}
+
 .wrap {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -7,20 +21,20 @@
     border-radius: 15px;
     li {
         list-style: none;
+        button {
+            // display: grid;
+            // grid-template-columns: 1fr 1fr 1fr 1fr;
+            background: #AAA;
+            border-radius: 15px;
+            width: 20vw;
+            height: 20vw;
+            &:active {
+                background: #DDD;
+            }
+        }
     }
 }
 
 .wrap {
-    .odd {display: none;}    
-    button {
-        // display: grid;
-        // grid-template-columns: 1fr 1fr 1fr 1fr;
-        background: #AAA;
-        border-radius: 15px;
-        width: 100px;
-        height: 100px;
-        &:active {
-            background: #DDD;
-        }
-    }
+    
 }

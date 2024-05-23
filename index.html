@@ -3,85 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Kaisei+Tokumin&family=Kiwi+Maru&family=M+PLUS+Rounded+1c&family=Yuji+Syuku&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
+    <title>MPC</title>
 </head>
 <div>
-    <!-- <div class="wrap">
-        <div class="input-area">
-            <div id="padA01_Pad">
-                <div id="pad1" class="pad">aaa</div>
-                <textarea id="padA01_Text" class="text" placeholder="本文を入力"></textarea>
-            </div>
-        </div>
-        <div class="input-area">
-            <div id="padA02_Pad">
-                <div id="pad2" class="pad">aaa</div>
-                <p id="padA02_Text" class="text"></p>
-                <textarea id="padA02_Edit" class="edit" placeholder="本文を入力"></textarea>
-            </div>
-        </div>
-        <div class="button-area">
-            <button id="save">セーブ</button>
-            <button id="clear">全て削除</button>
-        </div>
-    </div> -->
-    <div>
-        <button id="edit">編集</button>
-    </div>
     <div id="bankA">
-        <ul id="wrapAPad" class="wrap">
+        <ul id="wrapAPad" class="d_none">
             <li class="pad">
-                <input id="valA1" type="text" placeholder="テキスト入力">
+                <input id="valA1" type="textarea" placeholder="テキスト入力">
             </li>
             <li class="pad">
-                <input id="valA2" type="text" placeholder="テキスト入力">
+                <input id="valA2" type="textarea" placeholder="テキスト入力">
             </li>
             <li class="pad">
-                <input id="valA3" type="text" placeholder="テキスト入力">
+                <input id="valA3" type="textarea" placeholder="テキスト入力">
             </li>
             <li class="pad">
-                <input id="valA4" type="text" placeholder="テキスト入力">
+                <input id="valA4" type="textarea" placeholder="テキスト入力">
             </li>
             <li class="pad">
-                <input id="valA5" type="text" placeholder="テキスト入力">
+                <input id="valA5" type="textarea" placeholder="テキスト入力">
             </li>
             <li class="pad">
-                <input id="valA6" type="text" placeholder="テキスト入力">
+                <input id="valA6" type="textarea" placeholder="テキスト入力">
             </li>
             <li class="pad">
-                <input id="valA7" type="text" placeholder="テキスト入力">
+                <input id="valA7" type="textarea" placeholder="テキスト入力">
             </li>
             <li class="pad">
-                <input id="valA8" type="text" placeholder="テキスト入力">
+                <input id="valA8" type="textarea" placeholder="テキスト入力">
             </li>
             <li class="pad">
-                <input id="valA9" type="text" placeholder="テキスト入力">
+                <input id="valA9" type="textarea" placeholder="テキスト入力">
             </li>
             <li class="pad">
-                <input id="valA10" type="text" placeholder="テキスト入力">
+                <input id="valA10" type="textarea" placeholder="テキスト入力">
             </li>
             <li class="pad">
-                <input id="valA11" type="text" placeholder="テキスト入力">
+                <input id="valA11" type="textarea" placeholder="テキスト入力">
             </li>
             <li class="pad">
-                <input id="valA12" type="text" placeholder="テキスト入力">
+                <input id="valA12" type="textarea" placeholder="テキスト入力">
             </li>
             <li class="pad">
-                <input id="valA13" type="text" placeholder="テキスト入力">
+                <input id="valA13" type="textarea" placeholder="テキスト入力">
             </li>
             <li class="pad">
-                <input id="valA14" type="text" placeholder="テキスト入力">
+                <input id="valA14" type="textarea" placeholder="テキスト入力">
             </li>
             <li class="pad">
-                <input id="valA15" type="text" placeholder="テキスト入力">
+                <input id="valA15" type="textarea" placeholder="テキスト入力">
             </li>
             <li class="pad">
-                <input id="valA16" type="text" placeholder="テキスト入力">
+                <input id="valA16" type="textarea" placeholder="テキスト入力">
             </li>
         </ul>
-        <ul id="wrapAEdit" class="wrap display">
+        <ul id="wrapAEdit" class="wrap">
             <li id="padA1" class="edit">
                 <p></p>
             </li>
@@ -131,63 +115,12 @@
             </li>
         </ul>
     </div>
-    <!-- <div id="bankB" class="d_none">
-        <ul class="wrap">
-            <li>
-                <input id="valB1" type="text" placeholder="テキスト入力">
-            </li>
-            <li>
-                <input id="valB2" type="text" placeholder="テキスト入力">
-            </li>
-            <li>
-                <input id="valB3" type="text" placeholder="テキスト入力">
-            </li>
-            <li>
-                <input id="valB4" type="text" placeholder="テキスト入力">
-            </li>
-            <li>
-                <input id="valB5" type="text" placeholder="テキスト入力">
-            </li>
-            <li>
-                <input id="valB6" type="text" placeholder="テキスト入力">
-            </li>
-            <li>
-                <input id="valB7" type="text" placeholder="テキスト入力">
-            </li>
-            <li>
-                <input id="valB8" type="text" placeholder="テキスト入力">
-            </li>
-            <li>
-                <input id="valB9" type="text" placeholder="テキスト入力">
-            </li>
-            <li>
-                <input id="valB10" type="text" placeholder="テキスト入力">
-            </li>
-            <li>
-                <input id="valB11" type="text" placeholder="テキスト入力">
-            </li>
-            <li>
-                <input id="valB12" type="text" placeholder="テキスト入力">
-            </li>
-            <li>
-                <input id="valB13" type="text" placeholder="テキスト入力">
-            </li>
-            <li>
-                <input id="valB14" type="text" placeholder="テキスト入力">
-            </li>
-            <li>
-                <input id="valB15" type="text" placeholder="テキスト入力">
-            </li>
-            <li>
-                <input id="valB16" type="text" placeholder="テキスト入力">
-            </li>
-        </ul>
-    </div> -->
-    <input type="button" value="保存" onclick="save();"/>
-    <input type="button" value="読込" onclick="load();"/>
-    <div>保存されてるテキスト：</div>
-    <ul class="display"></ul>
 
+    <input id="edit" type="button" value="編集" onclick="edit();">
+    <input id="save" type="button" value="保存" onclick="save();" class="d_none">
+    <!-- <input type="button" value="読込" onclick="load();"/> -->
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/app.js"></script>
 </body>
