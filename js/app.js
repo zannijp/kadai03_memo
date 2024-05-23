@@ -1,19 +1,4 @@
-// 要素を取得
-// const elm = document.querySelectorAll('#wrapA li');
-// elm.forEach(function(v, i){
-//     if (((i+1) % 2) === 0) {        
-//         v.classList.add('even'); //偶数
-//     } else {        
-//         v.classList.add('odd'); //奇数
-//     }
-// });
-
-// // Padの数 1～16
-// let array = [];
-// for (let num = 1; num <= 6; num++) {
-//     array.push(num);
-// }
-
+// 編集
 function edit() {
     $("#wrapAPad").removeClass("d_none");
     $("#wrapAPad").addClass("wrap");
@@ -206,11 +191,6 @@ if (padA1val === null) {
     $("#padA1").html(padA1html);
 }
 $("#valA1").val(padA1val);
-// if (padA1val === null) {
-//     console.log('padA1はnullです');
-//     } else {
-//         console.log('padA1はnullではないです');
-// }
 
 let padA2val = localStorage.getItem("padA2");
 const padA2html = `
@@ -376,20 +356,6 @@ if (padA16val === null) {
     $("#padA16").html(padA16html);
 }
 $("#valA16").val(padA16val);
-
-// // 読込
-// function load() {
-// const display = document.querySelector(".display");
-// // localstorageに保存したデータ（配列）を取得
-// const data = JSON.parse(localStorage.getItem("data"));
-// // localstorageに保存したデータを表示
-// Object.keys(data).forEach(element => {
-//         let displayChild = document.createElement("li");
-//         displayChild.textContent = data[element];
-//         display.insertBefore(displayChild);
-//         $('#valA1').val(data[0]);
-//     });
-// }
 
 function copyA1() {
     /* テキスト内容を取得 */
@@ -738,128 +704,3 @@ $("body").on("keydown", function(e) {
         }
     }
 })
-
-
-// // Padの数 1～16
-// let array = [];
-// for (let num = 1; num <= 6; num++) {
-//     array.push(num);
-// }
-
-// function save() {
-//     for (let i = 0; i < array.length; i++) {
-//         const padNum = "pad" + array[i];
-//         const padID = "#pad" + array[i];
-//         const padVal = "val" + array[i];
-//         const valID = "#val" + array[i];
-//             // console.log(padNum, "padNum");
-//             // console.log(padID, "padID");
-//             // console.log(padVal, "padVal");
-//         const padValue = $(valID).val();
-//             console.log(padValue,"padValue");
-//         const padNV = padNum + ":" + padVal;
-//             console.log(padNV,"padNV");
-//         const data = { pad1: val1, pad2: val2, pad3: val3, pad4: val4, pad5: val5, pad: val6 };
-//             console.log(data,"data");
-//         localStorage.setItem("data", JSON.stringify(data));
-//         // data.push(padNV);
-//         //     console.log(padNV,"padNV");
-//     }
-//     // for (let i = 0; i < array.length; i++) {
-//     // const data = { padNV };
-//     //         console.log(data);
-//     //     data.push(padNV);
-//     //         console.log(padNV,"padNV");
-//     // }
-// }
-
-// pad1: val1, pad2: val2, pad3: val3, pad4: val4, pad5: val5, pad: val6
-
-// // 保存
-// function save() {
-//     const val1 = document.querySelector(".txt1").value;
-//     const val2 = document.querySelector(".txt2").value;
-//     const val3 = document.querySelector(".txt3").value;
-//     console.log(val3, "val3表示");
-// // 配列を定義
-// const data = { key1: val1, key2: val2, key3: val3 };
-// // 配列をJSON形式に変換してからlocalstorageに保存
-// localStorage.setItem("data", JSON.stringify(data));
-// }      
-
-// // 読込
-// function load() {
-// const display = document.querySelector(".display");
-// // localstorageに保存したデータ（配列）を取得
-// const data = JSON.parse(localStorage.getItem("data"));
-// // localstorageに保存したデータを表示
-// Object.keys(data).forEach(element => {
-//     var displayChild = document.createElement("li");
-//     displayChild.textContent = data[element];
-//     display.appendChild(displayChild);
-// });
-// }
-
-
-//Padの数 1～2
-// let array = []
-// for (let i = 1; i <= 16; i++) {
-//     array.push(i)
-// }
-
-// console.log(array, "回数");
-
-// $("#save").on("click", function () {
-// for (let i = 1; i < array.length; i++) {
-//     console.log(array, "レングス");
-//     const key = localStorage.key(i);
-//     const value = localStorage.getItem(key);
-
-//     localStorage.setItem("pad", JSON.stringify(data));
-//     }
-// });
-
-// let result = JSON.parse(localStorage.getItem("pad"));
-
-// console.log(result);
-// let data =  "pad" + array[i]
-// console.log(data, "データ");
-// const key = localStorage.key(array);
-// const value = localStorage.getItem(key);
-
-// //1.Save クリックイベント
-// $("#save").on("click", function () {
-//     const key = $("#title").val();
-//     const value = $("#text").val();
-
-//     localStorage.setItem(key, value);
-//     const html = `
-//     <li>
-//       <p>${key}</p>
-//       <p>あいうえお</p>
-//       <p>${value}</p>
-//     </li>
-//     `;
-//     $("#list").append(html);
-//   });
-
-
-  //2.clear クリックイベント
-//   $("#clear").on("click", function () {
-//     localStorage.clear();
-//     $("#list").empty();
-//   });
-
-
-//   //3.ページ読み込み：保存データ取得表示
-// for (let i = 0; i < localStorage.length; i++) {
-// const key = localStorage.key(i);
-// const value = localStorage.getItem(key);
-// const html = `
-// <li>
-//   <p>${key}</p>
-//   <p>${value}</p>
-// </li>
-// `;
-//   $("#list").append(html);
-// }
