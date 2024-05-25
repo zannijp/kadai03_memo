@@ -10,59 +10,81 @@
     <link rel="stylesheet" href="css/style.min.css">
     <title>MPC</title>
 </head>
-<div>
+<div id="wrap">
+    <div id="logoArea">
+        <img src="svg/logo.svg" alt="">
+    </div>
     <div id="bankA">
-        <ul id="wrapAPad" class="d_none">
+        <ul id="wrapAEdit" class="d_none">
             <li class="pad">
-                <input id="valA1" type="textarea" placeholder="テキスト入力">
+                <p class="editText">PAD<span>1</span></p>
+                <textarea id="valA1" rows="6" placeholder="テキスト入力"></textarea>
             </li>
             <li class="pad">
-                <input id="valA2" type="textarea" placeholder="テキスト入力">
+                <p class="editText">PAD<span>2</span></p>
+                <textarea id="valA2" rows="6" placeholder="テキスト入力"></textarea>
             </li>
             <li class="pad">
-                <input id="valA3" type="textarea" placeholder="テキスト入力">
+                <p class="editText">PAD<span>3</span></p>
+                <textarea id="valA3" rows="6" placeholder="テキスト入力"></textarea>
             </li>
             <li class="pad">
-                <input id="valA4" type="textarea" placeholder="テキスト入力">
+                <p class="editText">PAD<span>4</span></p>
+                <textarea id="valA4" rows="6" placeholder="テキスト入力"></textarea>
             </li>
             <li class="pad">
-                <input id="valA5" type="textarea" placeholder="テキスト入力">
+                <p class="editText">PAD<span>5</span></p>
+                <textarea id="valA5" rows="6" placeholder="テキスト入力"></textarea>
             </li>
             <li class="pad">
-                <input id="valA6" type="textarea" placeholder="テキスト入力">
+                <p class="editText">PAD<span>6</span></p>
+                <textarea id="valA6" rows="6" placeholder="テキスト入力"></textarea>
             </li>
             <li class="pad">
-                <input id="valA7" type="textarea" placeholder="テキスト入力">
+                <p class="editText">PAD<span>7</span></p>
+                <textarea id="valA7" rows="6" placeholder="テキスト入力"></textarea>
             </li>
             <li class="pad">
-                <input id="valA8" type="textarea" placeholder="テキスト入力">
+                <p class="editText">PAD<span>8</span></p>
+                <textarea id="valA8" rows="6" placeholder="テキスト入力"></textarea>
             </li>
             <li class="pad">
-                <input id="valA9" type="textarea" placeholder="テキスト入力">
+                <p class="editText">PAD<span>9</span></p>
+                <textarea id="valA9" rows="6" placeholder="テキスト入力"></textarea>
             </li>
             <li class="pad">
-                <input id="valA10" type="textarea" placeholder="テキスト入力">
+                <p class="editText">PAD<span>10</span></p>
+                <textarea id="valA10" rows="6" placeholder="テキスト入力"></textarea>
             </li>
             <li class="pad">
-                <input id="valA11" type="textarea" placeholder="テキスト入力">
+                <p class="editText">PAD<span>11</span></p>
+                <textarea id="valA11" rows="6" placeholder="テキスト入力"></textarea>
             </li>
             <li class="pad">
-                <input id="valA12" type="textarea" placeholder="テキスト入力">
+                <p class="editText">PAD<span>12</span></p>
+                <textarea id="valA12" rows="6" placeholder="テキスト入力"></textarea>
             </li>
             <li class="pad">
-                <input id="valA13" type="textarea" placeholder="テキスト入力">
+                <p class="editText">PAD<span>13</span></p>
+                <textarea id="valA13" rows="6" placeholder="テキスト入力"></textarea>
             </li>
             <li class="pad">
-                <input id="valA14" type="textarea" placeholder="テキスト入力">
+                <p class="editText">PAD<span>14</span></p>
+                <textarea id="valA14" rows="6" placeholder="テキスト入力"></textarea>
             </li>
             <li class="pad">
-                <input id="valA15" type="textarea" placeholder="テキスト入力">
+                <p class="editText">PAD<span>15</span></p>
+                <textarea id="valA15" rows="6" placeholder="テキスト入力"></textarea>
             </li>
             <li class="pad">
-                <input id="valA16" type="textarea" placeholder="テキスト入力">
+                <p class="editText">PAD<span>16</span></p>
+                <textarea id="valA16" rows="6" placeholder="テキスト入力"></textarea>
             </li>
-        </ul>
-        <ul id="wrapAEdit" class="wrap">
+            <li>
+                <input id="save" type="button" value="保存" onclick="save();" class="">
+            </li>
+            </ul>
+        <ul id="wrapAPad" class="wrap">
             <li id="padA1" class="edit">
                 <p></p>
             </li>
@@ -113,8 +135,11 @@
         </ul>
     </div>
 
-    <input id="edit" type="button" value="編集" onclick="edit();">
-    <input id="save" type="button" value="保存" onclick="save();" class="d_none">
+    <ul>
+        <li>
+            <input id="edit" type="button" value="編集" onclick="edit();">
+        </li>
+    </ul>
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

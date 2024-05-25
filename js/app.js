@@ -1,7 +1,7 @@
 // 編集
 function edit() {
-    $("#wrapAPad").removeClass("d_none");
-    $("#wrapAPad").addClass("wrap");
+    $("#wrapAEdit").removeClass("d_none");
+    $("#wrapAEdit").addClass("wrap");
     $("#edit").addClass("d_none");
     $("#save").removeClass("d_none");
 }
@@ -168,13 +168,13 @@ function save() {
     $("#padA16").html(padA16html);
     $("#valA16").val(padA16val);
 
-    $("#wrapAPad").addClass("d_none");
-    $("#wrapAPad").removeClass("wrap");
+    $("#wrapAEdit").addClass("d_none");
+    $("#wrapAEdit").removeClass("wrap");
     $("#edit").removeClass("d_none");
     $("#save").addClass("d_none");
     swal({
         title: "保存しました！",
-        text: "-----------",
+        text: "",
         icon: "success",
         timer: 2500,
     });
@@ -183,6 +183,7 @@ function save() {
 // 読込
 let padA1val = localStorage.getItem("padA1");
 const padA1html = `
+<p class="padText">PAD<span>1</span></p>
 <button onclick="copyA1()">${padA1val}</button>
 `;
 if (padA1val === null) {
@@ -194,6 +195,7 @@ $("#valA1").val(padA1val);
 
 let padA2val = localStorage.getItem("padA2");
 const padA2html = `
+<p class="padText">PAD<span>2</span></p>
 <button onclick="copyA2()">${padA2val}</button>
 `;
 if (padA2val === null) {
@@ -205,6 +207,7 @@ $("#valA2").val(padA2val);
 
 let padA3val = localStorage.getItem("padA3");
 const padA3html = `
+<p class="padText">PAD<span>3</span></p>
 <button onclick="copyA3()">${padA3val}</button>
 `;
 if (padA3val === null) {
@@ -212,10 +215,11 @@ if (padA3val === null) {
 } else {
     $("#padA3").html(padA3html);
 }
-$("#valA3").val(padA3val);
+$("#valA 3").val(padA3val);
 
 let padA4val = localStorage.getItem("padA4");
 const padA4html = `
+<p class="padText">PAD<span>4</span></p>
 <button onclick="copyA4()">${padA4val}</button>
 `;
 if (padA4val === null) {
@@ -227,6 +231,7 @@ $("#valA4").val(padA4val);
 
 let padA5val = localStorage.getItem("padA5");
 const padA5html = `
+<p class="padText">PAD<span>Q</span></p>
 <button onclick="copyA5()">${padA5val}</button>
 `;
 if (padA5val === null) {
@@ -238,6 +243,7 @@ $("#valA5").val(padA5val);
 
 let padA6val = localStorage.getItem("padA6");
 const padA6html = `
+<p class="padText">PAD<span>W</span></p>
 <button onclick="copyA6()">${padA6val}</button>
 `;
 if (padA6val === null) {
@@ -249,6 +255,7 @@ $("#valA6").val(padA6val);
 
 let padA7val = localStorage.getItem("padA7");
 const padA7html = `
+<p class="padText">PAD<span>E</span></p>
 <button onclick="copyA7()">${padA7val}</button>
 `;
 if (padA7val === null) {
@@ -260,6 +267,7 @@ $("#valA7").val(padA7val);
 
 let padA8val = localStorage.getItem("padA8");
 const padA8html = `
+<p class="padText">PAD<span>R</span></p>
 <button onclick="copyA8()">${padA8val}</button>
 `;
 if (padA8val === null) {
@@ -271,6 +279,7 @@ $("#valA8").val(padA8val);
 
 let padA9val = localStorage.getItem("padA9");
 const padA9html = `
+<p class="padText">PAD<span>A</span></p>
 <button onclick="copyA9()">${padA9val}</button>
 `;
 if (padA9val === null) {
@@ -282,6 +291,7 @@ $("#valA9").val(padA9val);
 
 let padA10val = localStorage.getItem("padA10");
 const padA10html = `
+<p class="padText">PAD<span>S</span></p>
 <button onclick="copyA10()">${padA10val}</button>
 `;
 if (padA10val === null) {
@@ -293,6 +303,7 @@ $("#valA10").val(padA10val);
 
 let padA11val = localStorage.getItem("padA11");
 const padA11html = `
+<p class="padText">PAD<span>D</span></p>
 <button onclick="copyA11()">${padA11val}</button>
 `;
 if (padA11val === null) {
@@ -304,6 +315,7 @@ $("#valA11").val(padA11val);
 
 let padA12val = localStorage.getItem("padA12");
 const padA12html = `
+<p class="padText">PAD<span>F</span></p>
 <button onclick="copyA12()">${padA12val}</button>
 `;
 if (padA12val === null) {
@@ -315,6 +327,7 @@ $("#valA12").val(padA12val);
 
 let padA13val = localStorage.getItem("padA13");
 const padA13html = `
+<p class="padText">PAD<span>Z</span></p>
 <button onclick="copyA13()">${padA13val}</button>
 `;
 if (padA13val === null) {
@@ -326,6 +339,7 @@ $("#valA13").val(padA13val);
 
 let padA14val = localStorage.getItem("padA14");
 const padA14html = `
+<p class="padText">PAD<span>X</span></p>
 <button onclick="copyA14()">${padA14val}</button>
 `;
 if (padA14val === null) {
@@ -337,6 +351,7 @@ $("#valA14").val(padA14val);
 
 let padA15val = localStorage.getItem("padA15");
 const padA15html = `
+<p class="padText">PAD<span>C</span></p>
 <button onclick="copyA15()">${padA15val}</button>
 `;
 if (padA15val === null) {
@@ -348,6 +363,7 @@ $("#valA15").val(padA15val);
 
 let padA16val = localStorage.getItem("padA16");
 const padA16html = `
+<p class="padText">PAD<span>V</span></p>
 <button onclick="copyA16()">${padA16val}</button>
 `;
 if (padA16val === null) {
