@@ -13,6 +13,7 @@ function save() {
     let padA1val = localStorage.getItem("padA1");
     console.log(padA1val);
     const padA1html = `
+    <p class="padText">PAD<span>1</span></p>
     <button onclick="copyA1()">${padA1val}</button>
         `;
     $("#padA1").html(padA1html);
@@ -23,6 +24,7 @@ function save() {
     let padA2val = localStorage.getItem("padA2");
     console.log(padA2val);
     const padA2html = `
+    <p class="padText">PAD<span>2</span></p>
     <button onclick="copyA2()">${padA2val}</button>
         `;
     $("#padA2").html(padA2html);
@@ -33,6 +35,7 @@ function save() {
     let padA3val = localStorage.getItem("padA3");
     console.log(padA3val);
     const padA3html = `
+    <p class="padText">PAD<span>3</span></p>
     <button onclick="copyA3()">${padA3val}</button>
         `;
     $("#padA3").html(padA3html);
@@ -43,6 +46,7 @@ function save() {
     let padA4val = localStorage.getItem("padA4");
     console.log(padA4val);
     const padA4html = `
+    <p class="padText">PAD<span>4</span></p>
     <button onclick="copyA4()">${padA4val}</button>
         `;
     $("#padA4").html(padA4html);
@@ -53,6 +57,7 @@ function save() {
     let padA5val = localStorage.getItem("padA5");
     console.log(padA5val);
     const padA5html = `
+    <p class="padText">PAD<span>Q</span></p>
     <button onclick="copyA5()">${padA5val}</button>
         `;
     $("#padA5").html(padA5html);
@@ -63,6 +68,7 @@ function save() {
     let padA6val = localStorage.getItem("padA6");
     console.log(padA6val);
     const padA6html = `
+    <p class="padText">PAD<span>W</span></p>
     <button onclick="copyA6()">${padA6val}</button>
         `;
     $("#padA6").html(padA6html);
@@ -73,6 +79,7 @@ function save() {
     let padA7val = localStorage.getItem("padA7");
     console.log(padA7val);
     const padA7html = `
+    <p class="padText">PAD<span>E</span></p>
     <button onclick="copyA7()">${padA7val}</button>
         `;
     $("#padA7").html(padA7html);
@@ -83,6 +90,7 @@ function save() {
     let padA8val = localStorage.getItem("padA8");
     console.log(padA8val);
     const padA8html = `
+    <p class="padText">PAD<span>R</span></p>
     <button onclick="copyA8()">${padA8val}</button>
         `;
     $("#padA8").html(padA8html);
@@ -93,6 +101,7 @@ function save() {
     let padA9val = localStorage.getItem("padA9");
     console.log(padA9val);
     const padA9html = `
+    <p class="padText">PAD<span>A</span></p>
     <button onclick="copyA9()">${padA9val}</button>
         `;
     $("#padA9").html(padA9html);
@@ -103,6 +112,7 @@ function save() {
     let padA10val = localStorage.getItem("padA10");
     console.log(padA10val);
     const padA10html = `
+    <p class="padText">PAD<span>S</span></p>
     <button onclick="copyA10()">${padA10val}</button>
         `;
     $("#padA10").html(padA10html);
@@ -113,6 +123,7 @@ function save() {
     let padA11val = localStorage.getItem("padA11");
     console.log(padA11val);
     const padA11html = `
+    <p class="padText">PAD<span>D</span></p>
     <button onclick="copyA11()">${padA11val}</button>
         `;
     $("#padA11").html(padA11html);
@@ -123,6 +134,7 @@ function save() {
     let padA12val = localStorage.getItem("padA12");
     console.log(padA12val);
     const padA12html = `
+    <p class="padText">PAD<span>F</span></p>
     <button onclick="copyA12()">${padA12val}</button>
         `;
     $("#padA12").html(padA12html);
@@ -133,6 +145,7 @@ function save() {
     let padA13val = localStorage.getItem("padA13");
     console.log(padA13val);
     const padA13html = `
+    <p class="padText">PAD<span>Z</span></p>
     <button onclick="copyA13()">${padA13val}</button>
         `;
     $("#padA13").html(padA13html);
@@ -143,6 +156,7 @@ function save() {
     let padA14val = localStorage.getItem("padA14");
     console.log(padA14val);
     const padA14html = `
+    <p class="padText">PAD<span>X</span></p>
     <button onclick="copyA14()">${padA14val}</button>
         `;
     $("#padA14").html(padA14html);
@@ -153,6 +167,7 @@ function save() {
     let padA15val = localStorage.getItem("padA15");
     console.log(padA15val);
     const padA15html = `
+    <p class="padText">PAD<span>C</span></p>
     <button onclick="copyA15()">${padA15val}</button>
         `;
     $("#padA15").html(padA15html);
@@ -163,6 +178,7 @@ function save() {
     let padA16val = localStorage.getItem("padA16");
     console.log(padA16val);
     const padA16html = `
+    <p class="padText">PAD<span>V</span></p>
     <button onclick="copyA16()">${padA16val}</button>
         `;
     $("#padA16").html(padA16html);
